@@ -253,7 +253,8 @@ ubuntu_dep() {
   add-apt-repository universe -y
 
   # Add PPA for PHP (we need 8.3)
-  LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+  # I DONT NEED PPA (i'm in 24.10 :sob:)
+  LC_ALL=C.UTF-8 add-apt-repository -y http://ossmirror.mycloud.services/os/linux/ubuntu/
 }
 
 debian_dep() {
